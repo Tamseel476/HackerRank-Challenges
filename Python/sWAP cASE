@@ -1,0 +1,22 @@
+#Aim: Upper case to lower case/lower case to upper case conversion
+#Given: A single LINE containing a string
+#Solution: Put the strings in a list. Convert the strings. Print the list.
+#test: HeLlo -> take input -> interate over input -> if lower() if upper() -> store swapped case -> print the result -> helLO
+
+def swap_case(user_input):
+ #iteration checking for upper case 
+ result_string =""
+ for i in user_input:       
+    if(i.isupper()):
+        z=i.lower()
+        
+    if(not i.isupper()):
+        z=i.upper()
+    result_string+=z
+ return result_string
+    
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
